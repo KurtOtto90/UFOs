@@ -13,9 +13,10 @@ function buildTable(data) {
         Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
-        })
+        });
 
-    });1
+    });
+};
 
 function handleClick() {
     //get datetime from filter
@@ -38,5 +39,5 @@ d3.selectAll("#filter-btn").on("click", handleClick);
 // Build table on page load
 buildTable(tableData);
 
-}
+
 
